@@ -1,5 +1,5 @@
-# server-for-minecraft-web-GUI
-Der zugehörige Windows Minecraft Server für das Repository minecraft-web-GUI
+# Server For Minecraft Web GUI
+Der zugehörige Windows Minecraft Server für das Repository Minecraft-Web-GUI
 
 ## Prerequisites
 
