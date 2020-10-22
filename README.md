@@ -6,12 +6,20 @@ Der zugehörige Windows Minecraft Server für das Repository Minecraft-Web-GUI
 * PHP 5 (und mehr)
 * Apache 24
 * Offene Ports (80, (ggf. 433), 25575, 25565) (TCP)
-* System: Windows 7, Windows 10, Windows Server
+* System: Windows 7, Windows 10, Windows Server, Linux
 * Empfohlen: Git
 
-Empfohlen: Zweiten Server mit Linux System auf dem das Repositorys ["minecraft-web-GUI"](https://github.com/12tom12/minecraft-web-GUI) installiert ist.
+Empfohlen: Zweiten Server mit Linux System auf dem das Repositorys ["minecraft-web-GUI"](https://github.com/tomtactom/minecraft-web-GUI) installiert ist.
 
 ## Getting Started
+
+Installiere Java _per Windows:_ https://www.java.com/de/download/help/download_options.html
+_oder per Linux:_
+```sh
+sudo apt update
+sudo apt install default-jdk -y
+sudo apt install screen -y
+```
 
 Installiere Apache24 und PHP7 auf deinem Windows Computer und verknüpfe die beiden miteinander und installiere Apache als Hintergrunddienst. Wie das geht, findet man in unzähligen Tutorials im Internet.
 
@@ -22,13 +30,11 @@ Richte das ganze so ein, dass du das Stammverzeichnis über z. B. http://example
 
 Erstelle dann im Verzeichnis, das man über die Domain direkt aufrufen kann den Ordner "minecraft"
 
-Installiere zuerst auf deinem Linux-Server das Repository ["minecraft-web-GUI"](https://github.com/12tom12/minecraft-web-GUI) und folge  dort zuerst der Installationsanleitung.
+Installiere zuerst auf deinem Linux-Server das Repository ["minecraft-web-GUI"](https://github.com/tomtactom/minecraft-web-GUI) und folge  dort zuerst der Installationsanleitung.
 
 Empfohlen: bei Server mit GIT: Baue eine dauerhafte Pull Verbindung zwischen dem Repository und deinem Server auf.
 Anders: bei Server ohne GIT: Lade dir das Repository als Zip Datei herunter.
 Speichere das Repository so ab, dass die Datei index.php über z. B. http://localhost/minecraft/start.php aufrufbar ist.
-
-Lade dir entweder von ["MCVersions.net"](https://mcversions.net/) oder von ["Spigot"](https://getbukkit.org/download/spigot) einen Minecraft Server herunter und speichere ihn als ''' server.jar ''' im /minecraft/ Ordner ab.
 
 Starte nun den Server und Stoppe ihn direkt danach wieder, wenn er nicht von alleine gestoppt wird.
 
@@ -37,7 +43,7 @@ Im Stammverzeichnis des Repositorys findest du die Datei "eula.txt". Diese Datei
 Starte nun den Server und Stoppe ihn direkt danach wieder, wenn er nicht von alleine gestoppt wird.
 
 Im Stammverzeichnis des Repositorys findest du die Datei "server.properties". Diese Datei öffnest du jetzt.
-Trage in ihr "enable-rcon=true" und "rcon.password=DEINPASSWORT" ein. Das Passwort ist das gleiche, was du beim ["minecraft-web-GUI"](https://github.com/12tom12/minecraft-web-GUI) in der config.inc.php bei "$password = '';" eingibst.
+Trage in ihr "enable-rcon=true" und "rcon.password=DEINPASSWORT" ein. Das Passwort ist das gleiche, was du beim ["minecraft-web-GUI"](https://github.com/tomtactom/minecraft-web-GUI) in der config.inc.php bei "$password = '';" eingibst.
 
 Starte nun den Server und stoppe ihn wieder.
 
@@ -63,9 +69,9 @@ Noch keine vorhanden
 
 ## Authors
 
-* **Tom** - *Hauptarbeit* - [12tom12](https://github.com/12tom12/)
+* **Tom** - [tomtactom](https://github.com/tomtactom/)
 
-Hier ist noch eine Auflistung von allen [contributors](https://github.com/12tom12/server-for-minecraft-web-GUI/graphs/contributors), die an diesem Projekt mitgewirkt haben.
+Hier ist noch eine Auflistung von allen [contributors](https://github.com/tomtactom/server-for-minecraft-web-GUI/graphs/contributors), die an diesem Projekt mitgewirkt haben.
 
 ## License
 
