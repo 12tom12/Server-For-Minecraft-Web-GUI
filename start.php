@@ -4,5 +4,9 @@
 	} else {
 		$ram = '1500';
 	}
-	echo shell_exec('java -Xmx'.$ram.'M -jar server.jar nogui');
+	if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+		echo shell_exec('java -Xmx'.$ram.'M -jar server.jar nogui');
+	} else {
+		echo shell_exec('java -Xmx'.$ram.'M -jar server.jar nogui');
+	}
 ?>
